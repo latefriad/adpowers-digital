@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adpowers Digital - Premium Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            900: '#0f0f0f',
+                            950: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1e1b4b 0%, #0f0f23 50%, #1a1a2e 100%);
+        }
+        html { scroll-behavior: smooth; }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all .8s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .hover-scale { transition: transform .3s ease; }
+        .hover-scale:hover { transform: translateY(-10px); }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-md z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
+                Adpowers
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#hero" class="hover:text-purple-400 transition">Home</a>
+                <a href="#services" class="hover:text-purple-400 transition">Services</a>
+                <a href="#results" class="hover:text-purple-400 transition">Results</a>
+                <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+            </div>
+            <button onclick="scrollTo('#contact')" class="bg-gradient-to-r from-purple-500 to-blue-600 px-6 py-2 rounded-full font-semibold hover:shadow-xl transition-all">
+                Book Call
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero-bg min-h-screen flex items-center justify-center pt-20 px-4">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h1 class="text-5xl md:text-7xl font-black bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-8 leading-tight">
+                Scale Your Business 10x
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                High-ROAS Meta Ads • Conversion Websites • Premium Brands
+            </p>
+            <button onclick="scrollTo('#contact')" class="bg-gradient-to-r from-purple-500 to-blue-600 text-xl px-12 py-6 rounded-full font-bold hover:from-purple-600 hover:to-blue-700 transition-all shadow-2xl hover-scale mx-auto">
+                Free Audit <i class="fas fa-arrow-right ml-3"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 px-4 bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20 fade-in">
+                <h2 class="text-5xl font-black bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent mb-6">
+                    Services
+                </h2>
+                <p class="text-xl text-gray-400 max-w-xl mx-auto">
+                    Scale with proven expertise
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-10 rounded-3xl border border-gray-700 hover-scale hover:border-purple-500 transition-all group">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition">
+                        <i class="fas fa-bullseye text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6 text-center">Meta Ads</h3>
+                    <p class="text-gray-400 text-center mb-6">4x ROAS Facebook & Instagram campaigns</p>
+                    <div class="text-purple-400 font-bold text-2xl text-center">200%+ Lift</div>
+                </div>
+                <div class="bg-gray-900 p-10 rounded-3xl border border-gray-700 hover-scale hover:border-purple-500 transition-all group">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6 text-center">Web Dev</h3>
+                    <p class="text-gray-400 text-center mb-6">Lightning fast conversion sites</p>
+                    <div class="text-blue-400 font-bold text-2xl text-center">3x Speed</div>
+                </div>
+                <div class="bg-gray-900 p-10 rounded-3xl border border-gray-700 hover-scale hover:border-purple-500 transition-all group">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition">
+                        <i class="fas fa-paint-brush text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6 text-center">Branding</h3>
+                    <p class="text-gray-400 text-center mb-6">Premium identity systems</p>
+                    <div class="text-emerald-400 font-bold text-2xl text-center">2x Closes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="py-24 px-4 hero-bg">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h2 class="text-5xl font-black bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-20">
+                Results
+            </h2>
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div><div class="text-6xl font-black text-purple-400 mb-4">+300%</div><div class="text-2xl font-bold text-gray-200">ROAS</div></div>
+                <div><div class="text-6xl font-black text-blue-400 mb-4">15K</div><div class="text-2xl font-bold text-gray-200">Leads</div></div>
+                <div><div class="text-6xl font-black text-emerald-400 mb-4">$50M+</div><div class="text-2xl font-bold text-gray-200">Spend</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-24 px-4 bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20 fade-in">
+                <h2 class="text-5xl font-black bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent mb-6">
+                    Process
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-blue-600 mx-auto rounded-full mb-6 flex items-center justify-center text-xl font-bold">1</div>
+                    <h3 class="text-3xl font-bold mb-4">Strategy</h3>
+                    <p class="text-gray-400">Market research & custom planning</p>
+                </div>
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-blue-600 mx-auto rounded-full mb-6 flex items-center justify-center text-xl font-bold">2</div>
+                    <h3 class="text-3xl font-bold mb-4">Execution</h3>
+                    <p class="text-gray-400">Daily optimization & testing</p>
+                </div>
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-blue-600 mx-auto rounded-full mb-6 flex items-center justify-center text-xl font-bold">3</div>
+                    <h3 class="text-3xl font-bold mb-4">Scale</h3>
+                    <p class="text-gray-400">Systematic growth systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 px-4 hero-bg">
+        <div class="max-w-3xl mx-auto text-center fade-in">
+            <h2 class="text-5xl font-black bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-12">
+                Why Adpowers
+            </h2>
+            <p class="text-xl text-gray-300 leading-relaxed">
+                Performance-first agency engineering 7-figure campaigns. 
+                <br><br>
+                47+ agency partnerships • $50M+ managed
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 px-4 bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-black bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent mb-20 text-center fade-in">
+                Testimonials
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-10 rounded-3xl border border-gray-700 fade-in">
+                    <div class="flex mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-600 rounded-full flex items-center justify-center font-bold mr-4">JD</div>
+                        <div><div class="font-bold">John D.</div><div class="text-gray-500 text-sm">Founder</div></div>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"From $20k to $180k/mo revenue"</p>
+                    <div class="flex text-yellow-400">★★★★★</div>
+                </div>
+                <div class="bg-gray-900 p-10 rounded-3xl border border-gray-700 fade-in">
+                    <div class="flex mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-600 rounded-full flex items-center justify-center font-bold mr-4">SM</div>
+                        <div><div class="font-bold">Sarah M.</div><div class="text-gray-500 text-sm">CMO</div></div>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"4.8x ROAS unreal results"</p>
+                    <div class="flex text-yellow-400">★★★★★</div>
+                </div>
+                <div class="bg-gray-900 p-10 rounded-3xl border border-gray-700 fade-in">
+                    <div class="flex mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-600 rounded-full flex items-center justify-center font-bold mr-4">MK</div>
+                        <div><div class="font-bold">Mike K.</div><div class="text-gray-500 text-sm">CEO</div></div>
+                    </div>
+                    <p class="italic text-gray-300 mb-6">"Best growth partner ever"</p>
+                    <div class="flex text-yellow-400">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-4 hero-bg">
+        <div class="max-w-2xl mx-auto fade-in">
+            <h2 class="text-5xl font-black bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent text-center mb-12">
+                Get Free Audit
+            </h2>
+            <p class="text-xl text-gray-300 text-center mb-16">
+                15-min call. Honest growth roadmap.
+            </p>
+            <form id="contactForm" class="bg-gray-900/50 backdrop-blur p-12 rounded-3xl space-y-6 border border-gray-700">
+                <input type="text" id="name" placeholder="Name *" required class="w-full p-5 rounded-2xl border border-gray-600 bg-transparent text-white placeholder-gray-500 focus:border-purple-500 focus:outline-none">
+                <input type="tel" id="phone" placeholder="Phone *" required class="w-full p-5 rounded-2xl border border-gray-600 bg-transparent text-white placeholder-gray-500 focus:border-purple-500 focus:outline-none">
+                <select id="service" required class="w-full p-5 rounded-2xl border border-gray-600 bg-transparent text-white focus:border-purple-500">
+                    <option value="">Service</option>
+                    <option value="Meta Ads">Meta Ads</option>
+                    <option value="Web Dev">Web Dev</option>
+                    <option value="Branding">Branding</option>
+                </select>
+                <input type="text" id="niche" placeholder="Niche / Product *" required class="w-full p-5 rounded-2xl border border-gray-600 bg-transparent text-white placeholder-gray-500 focus:border-purple-500 focus:outline-none">
+                <input type="text" id="budget" placeholder="Ad Budget (monthly) *" required class="w-full p-5 rounded-2xl border border-gray-600 bg-transparent text-white placeholder-gray-500 focus:border-purple-500 focus:outline-none">
+                <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-blue-600 p-6 rounded-3xl font-bold text-xl hover:from-purple-600 hover:to-blue-700 transition-all shadow-xl hover:shadow-2xl">
+                    Send <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+            </form>
+            <div id="message" class="mt-8 p-6 rounded-2xl hidden text-center"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent mb-6">
+                Adpowers Digital
+            </div>
+            <p class="text-gray-500 mb-8">© 2024. All rights reserved.</p>
+            <div class="flex justify-center space-x-8 text-xl text-gray-500">
+                <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Telegram config - REPLACE THESE
+        const BOT_TOKEN = '8296244637:AAGq7W43YqXlcVWCCxqtzZYnC66ciCcMiUg';
+        const CHAT_ID = '102095977';
+
+        function scrollTo(id) {
+            document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Animations
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => entry.isIntersecting && entry.target.classList.add('visible'));
+        });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Navbar shadow
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('shadow-2xl', window.scrollY > 50);
+        });
+
+        // Form + Telegram
+        document.getElementById('contactForm').onsubmit = async e => {
+            e.preventDefault();
+            
+            const btn = e.target.querySelector('button[type="submit"]');
+            const msg = document.getElementById('message');
+            const oldText = btn.innerHTML;
+            
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+            btn.disabled = true;
+            msg.classList.add('hidden');
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                service: document.getElementById('service').value,
+                niche: document.getElementById('niche').value,
+                budget: document.getElementById('budget').value
+            };
+            
+            if (!formData.name || !formData.phone || !formData.service) return showMsg('Please fill required fields', 'bg-red-500/30 border-red-500');
+            
+            try {
+                const text = `🆕 NEW LEAD\n\n👤 ${formData.name}\n📧 ${formData.email}\n📞 ${formData.phone}\n🎯 ${formData.service}\n💬 ${formData.message}`;
+                
+                const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({chat_id: CHAT_ID, text, parse_mode: 'HTML'})
+                });
+                
+                const data = await res.json();
+                if (data.ok) {
+                    showMsg('✅ Message sent! Reply in 24h.', 'bg-green-500/30 border-green-500');
+                    e.target.reset();
+                } else throw data;
+            } catch (err) {
+                console.error(err);
+                showMsg('❌ Error. Try email: hello@adpowers.digital', 'bg-red-500/30 border-red-500');
+            }
+            
+            btn.innerHTML = oldText;
+            btn.disabled = false;
+        };
+        
+        function showMsg(text, classes) {
+            const msg = document.getElementById('message');
+            msg.textContent = text;
+            msg.className = `mt-8 p-6 rounded-2xl border-2 text-white ${classes} ${msg.className.replace(/bg-.*?|border-.*?/g,'')} visible`;
+            msg.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
